@@ -1,0 +1,44 @@
+body {
+ background-color: #F5F5F5;
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100%;
+ width: auto;
+}
+
+.board {
+ border: 1px solid #333;
+ background-color: #FFF;
+}
+
+#toolbar {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+}
+
+#toolbar label {
+ margin-right: 20px;
+}
+
+#toolbar input, #toolbar button {
+ padding: 5px 10px;
+ font-size: 14px;
+}
+
+#toolbar button {
+ background-color: #333;
+ color: #ffffff;
+ border: none;
+ cursor: pointer;
+ margin: 10px;
+}
+
+#toolbar button:hover {
+ background-color: #555;
+}

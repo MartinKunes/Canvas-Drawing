@@ -9,8 +9,6 @@ let lineWidth = 5;
 let startX ;
 let startY ;
 
-canvas.width = window.innerWidth -  canvasOffsetX ;
-canvas.height = window.innerHeight - canvasOffsetY ;
 
 
 toolbar.addEventListener('click', e => {
@@ -53,7 +51,7 @@ const draw = (e) => {
     ctx.lineWidth = lineWidth;
     ctx.lineCap = 'round';
 
-    ctx.lineTo(e.clientX - (canvasOffsetX-575), e.clientY - (canvasOffsetY-275));
+    ctx.lineTo(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY);
     ctx.stroke();
 }
 
